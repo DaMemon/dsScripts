@@ -1,7 +1,7 @@
 $nowTime = $(get-date -f dd-MM-yy_hh-mm-ss)
 $startTime = $(get-date -f dd-MM-yy_dddd_hh-mm-ss)
 Start-Transcript -Path C:\Windows\Temp\sfc_$nowTime.log
-Write-host "Script Started - $($startTime)"
+Write-Information "Script Started - $($startTime)"
 ##$regPath = "HKLM:\SOFTWARE\FSLogix\profiles"
 try
 {
