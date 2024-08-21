@@ -1,3 +1,4 @@
+
 $nowTime = $(get-date -f dd-MM-yy_hh-mm-ss)
 Start-Transcript -Path C:\Windows\Temp\sfc_$nowTime.log 
 $regPath = "HKCU\Software\ITProCloud\WVDAdmin"
