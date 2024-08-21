@@ -1,3 +1,5 @@
+$nowTime = $(get-date -f dd-MM-yy_hh-mm-ss)
+Start-Transcript -Path C:\Windows\Temp\sfc_$nowTime.log 
 #$regPath = "HKLM:\SOFTWARE\FSLogix\profiles"
 try
 {
@@ -7,3 +9,4 @@ try
 Write-Output "Script Completed"
 }
 catch {}
+Stop-Transcript
